@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  openAIsecret: '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',
 };
 
 /*
