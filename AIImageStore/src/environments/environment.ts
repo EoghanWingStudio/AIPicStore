@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  openAIsecret: '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',
+  openAIsecret: '',
 };
 
 /*

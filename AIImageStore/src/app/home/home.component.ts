@@ -10,21 +10,5 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  async generateImage() {
-    try {
-      const response = await openai.createImageVariation(
-        fs.createReadStream('image.png'),
-        1,
-        '1024x1024'
-      );
-      console.log(response.data.data[0].url);
-    } catch (error) {
-      if (error.response) {
-        console.log(error.response.status);
-        console.log(error.response.data);
-      } else {
-        console.log(error.message);
-      }
-    }
-  }
+  async generateImage() {}
 }
