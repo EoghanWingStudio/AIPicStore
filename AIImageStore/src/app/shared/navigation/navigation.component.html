@@ -1,1 +1,26 @@
-<p>navigation works!</p>
+<div class="NavBarContainer">
+
+  <div class="mobileNavIcon">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+  <div class="navBar">
+    <a mat-button routerLink="/about-us">About us</a>
+    <a mat-button routerLink="/prices">Login</a>
+    <a mat-button routerLink="/start-page">Gallery</a>
+  </div>
+</div>
+
+<mat-sidenav-container fxFlexFill class="mobileNav">
+
+  <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
+    <div fxLayout="column">
+      <a mat-button routerLink="/about-us">About us</a>
+      <a mat-button routerLink="/prices">Login</a>
+      <a mat-button routerLink="/start-page">Gallery</a>
+    </div>
+  </mat-sidenav>
+
+</mat-sidenav-container>

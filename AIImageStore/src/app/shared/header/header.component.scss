@@ -1,0 +1,32 @@
+.logo {
+  height: 50px;
+  padding: 20px;
+}
+
+.header {
+  background-color: rgba($color: #800080, $alpha: 0.4);
+}
+
+
+.navBarContainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.github{
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .title{
+    display: none;
+  }
+}
+

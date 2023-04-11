@@ -12,7 +12,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NavigationComponent } from './shared/navigation/navigation.component';
-
+import { ImageGeneratorComponent } from './home/image-generator/image-generator.component';
+import { BackgroundComponent } from './shared/background/background.component';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +22,8 @@ import { NavigationComponent } from './shared/navigation/navigation.component';
     HeaderComponent,
     FooterComponent,
     NavigationComponent,
+    ImageGeneratorComponent,
+    BackgroundComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +33,7 @@ import { NavigationComponent } from './shared/navigation/navigation.component';
     MatInputModule,
     MatButtonModule,
     MatSidenavModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,16 @@
+.mobileNavIcon {
+  visibility: hidden;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .mobileNavIcon {
+    visibility: visible;
+  }
+
+  .navBar{
+    visibility: hidden;
+  }
+}
+
+
